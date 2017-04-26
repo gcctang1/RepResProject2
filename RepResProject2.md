@@ -1,3 +1,10 @@
+## I have problem using the "knitr" function in R Studio. All the codes can be run correctly; however, when using "knitr" there is an error message in this format:
+
+## Error in UseMethod("select_") : no applicable method for 'select_' applied to an object of class "function" Calls: <Anonymous> ...  _fseq -> freduce -> <Anonymous> -> select -> select_
+
+## I run out of ideas on how to deal with it (and I'm already late), so please bear with me that the submission is in md format.
+
+
 Introduction
 ------------
 
@@ -95,9 +102,14 @@ indicated by PROPDMGEXP and CROPDMGEXP parameters. According to this
 the index in the PROPDMGEXP and CROPDMGEXP can be interpreted as the
 following:-
 
-H, h -&gt; hundreds = x100 K, K -&gt; kilos = x1,000 M, m -&gt; millions
-= x1,000,000 B,b -&gt; billions = x1,000,000,000 (+) -&gt; x1 (-) -&gt;
-x0 (?) -&gt; x0 blank -&gt; x0
+H, h -&gt; hundreds = x100  
+K, K -&gt; kilos = x1,000  
+M, m -&gt; millions = x1,000,000   
+B,b -&gt; billions = x1,000,000,000  
+(+) -&gt; x1  
+(-) -&gt; x0  
+(?) -&gt; x0  
+blank -&gt; x0  
 
 The total damage caused by each event type is calculated with the
 following code.
